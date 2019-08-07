@@ -11,7 +11,7 @@ You can push changes, additions, et al directly to the `master` branch by follow
 
 ***
 
-### 0. `git status`
+#### 0. `git status`
 
 Optional. Let's you check what your current file changes are. Very useful.
 
