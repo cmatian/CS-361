@@ -48,6 +48,7 @@ h1.blue-text {
 
 .hidden {
     opacity: 0;
+    pointer-events: none;
 }
 
 a.btn-next {
