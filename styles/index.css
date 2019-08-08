@@ -1,7 +1,67 @@
 @charset "UTF-8";
 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Stylesheet */
 
 h1.blue-text {
     color: #3198ea;
+}
+
+.container {
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.brief-text,
+.tos-text {
+    font-size: 24px;
+}
+
+.autotester-link-bg {
+    text-align: center;
+    padding: 15px;
+    background: #eeeeee;
+    font-size: 36px;
+    border-radius: 10px;
+}
+
+.aux-target {
+    position: absolute;
+    transition: ease-in-out 1000ms;
+    will-change: opacity;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+a.btn-next {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 30px;
+}
+
+a.btn {
+    border-radius: 10px;
+}
+
+a.btn-next i {
+    font-size: 30px;
+    margin-right: 10px;
 }

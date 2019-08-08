@@ -2,21 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TOS - Pass State</title>
+    <title>TOS - Pass Simulation</title>
+    <meta charset="UTF-8">
+    <title>Alcohol Auto-Tester - Group 3</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Primary Stylesheet -->
+    <link href="../styles/index.css" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <h1>Header</h1>
+    <section class="container">
+        <div class="content-wrapper">
+            <div class="aux-target hidden tos-text">
+                <h1>Terms of Service</h1>
+                <p>By initiating this test, you acknowledge that failure to follow the testing instructions may result in damage to your vehicle.</p>
+                <p>Attempting to run or evade the Auto-Tester barricade will result in a felony, and you will be held responsible for damage(s), if any, incurred to the Auto-Testing device.</p>
+                <p>For a comprehensive overview of the terms of service, please visit:</p>
+                <div class="autotester-link-bg">
+                    <a href="javascript:void(0)" onclick="alert('Pretend this link actually does something');">https://www.autotester.gov</a>
+                </div>
+            </div>
+            <div class="aux-target hidden brief-text">
+                <p>Please remain still while the auto-tester evaluates the following details:</p>
+                <ul>
+                    <li>Your vehicle's license plate.</li>
+                    <li>A picture of the driver.</li>
+                    <li>A sample of the driver's breath.</li>
+                    <li>A brief evaluation of the driver's movement patterns.</li>
+                    <li>A brief evaluation of the driver's pupil dilation.</li>
+                </ul>
+            </div>
+            <div class="aux-target hidden">
+                <a href="javascript:void(0);" class="btn btn-primary btn-next" >
+                    <i class="material-icons">thumb_up</i>
+                    Begin Testing
+                </a>
+            </div>
+        </div>
     </section>
-    <section>
-        <p>Please remain still while the auto-tester evaluates the following details:</p>
-        <ul>
-            <li>Your vehicle's license plate.</li>
-            <li>A picture of the driver.</li>
-            <li>A sample of the driver's breath.</li>
-            <li>A brief evaluation of the driver's movement patterns.</li>
-            <li>A brief evaluation of the driver's pupil dilation.</li>
-        </ul>
-    </section>
+    <!-- All Scripts -->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper -- Required for Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Main Scripts -->
+    <script src="../scripts/index.js"></script>
+    <script>
+        // Initiate Scripts for TOS here
+        init();
+    </script>
 </body>
 </html>
