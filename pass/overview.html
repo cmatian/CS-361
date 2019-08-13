@@ -17,29 +17,72 @@
 <body>
 <section class="container">
     <div class="content-wrapper">
-        <div class="aux-target hidden">
-            
+        <!-- Getting license plate -->
+        <div class="aux-target hidden ov-item">
+            <div class="icon-group">
+                <i class="material-icons">directions_car</i>
+                <i class="material-icons status">check_circle</i>
+            </div>
+            <div class="text-group">The device is taking a snapshot of your vehicle's license plate.</div>
         </div>
-        <div class="aux-target hidden">
 
+        <!-- Getting driver picture -->
+        <div class="aux-target hidden ov-item">
+            <div class="icon-group">
+                <i class="material-icons">photo_camera</i>
+                <i class="material-icons status">check_circle</i>
+            </div>
+            <div class="text-group">The device is taking a picture of the driver.</div>
         </div>
-        <div class="aux-target hidden">
 
+        <!-- Getting driver breath -->
+        <div class="aux-target hidden ov-item">
+            <div class="icon-group">
+                <i class="material-icons">local_bar</i>
+                <i class="material-icons status">check_circle</i>
+            </div>
+            <div class="text-group">The device is analyzing the driver's breath for traces of alcohol.</div>
+        </div>
+
+        <!-- Getting driver movement patterns -->
+        <div class="aux-target hidden ov-item">
+            <div class="icon-group">
+                <i class="material-icons">accessibility_new</i>
+                <i class="material-icons status">check_circle</i>
+            </div>
+            <div class="text-group">The device is analyzing the driver's movement patterns.</div>
+        </div>
+
+        <!-- Getting driver pupil information -->
+        <div class="aux-target hidden ov-item">
+            <div class="icon-group">
+                <i class="material-icons">remove_red_eye</i>
+                <i class="material-icons status">check_circle</i>
+            </div>
+            <div class="text-group">The device is analyzing the driver's eye pattern and pupil dilation.</div>
+        </div>
+
+        <!-- Testing Complete -->
+        <div class="aux-target hidden">
+            <a href="javascript:void(0)" class="btn btn-primary btn-next" >
+                <i class="material-icons">check</i>
+                Testing Complete
+            </a>
         </div>
     </div>
 </section>
 <!-- All Scripts -->
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Popper -- Required for Bootstrap JS -->
+<!-- Popper Required for Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <!-- Bootstrap 4 JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Main Scripts -->
 <script src="../scripts/index.js"></script>
 <script>
-    // Initiate Scripts for TOS here
-    init();
+    // Initiate script for overview
+    initOverview();
 </script>
 </body>
 </html>

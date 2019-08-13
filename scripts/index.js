@@ -52,7 +52,7 @@ const init = async () => {
 
     asyncForEach(nodeList, async (item, i, array) => {
         // Render the item
-        item.classList.remove('hidden', 'remove-from-dom');
+        item.classList.remove('hidden');
 
         // Wait 3 seconds
         await waitFor(10000);
@@ -68,5 +68,25 @@ const init = async () => {
         // Wait 1000 ms until it has faded out before looping again
         await waitFor(1000);
     });
+};
+
+const initOverview = async () => {
+
+    const nodeList = document.querySelectorAll('.aux-target');
+
+    asyncForEach(nodeList, async (item, i, array) => {
+        item.classList.remove('hidden');
+        await waitFor(4000);
+
+        // If last item don't hide
+        if((i + 1) === array.length) {
+            return;
+        }
+
+        item.classList.add('hidden');
+        // Wait 1000 ms until it has faded out before looping again
+        await waitFor(1000);
+    });
+
 };
 

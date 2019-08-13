@@ -44,11 +44,49 @@ h1.blue-text {
     transition: ease-in-out 1000ms;
     will-change: opacity;
     opacity: 1;
+    text-align: center;
 }
 
 .hidden {
     opacity: 0;
     pointer-events: none;
+}
+
+.ov-item i:first-of-type {
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+
+.ov-item .icon-group {
+    display: inline-block;
+    position: relative;
+}
+
+
+.ov-item i.status {
+    position: absolute;
+    background: #fff;
+    right: -10px;
+    bottom: 20px;
+    font-size: 42px;
+    color: #22d65b;
+    border-radius: 50%;
+}
+
+.ov-item:not(.hidden) i.status {
+    opacity: 0;
+    animation: reveal_Animation 250ms ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes reveal_Animation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.ov-item div {
+    font-size: 36px;
 }
 
 a.btn-next {
